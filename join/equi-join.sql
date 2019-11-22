@@ -7,7 +7,7 @@ FROM employee JOIN department
 ON employee.department_id = department.department_id;
 
 SELECT employee.last_name, employee.department_id, department.department_name
-FROM employee, department
+FROM employee, department -- syntax sugar
 WHERE employee.department_id = department.department_id;
 
 SELECT *
